@@ -13,7 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('services', function (Blueprint $table) {
+            $table->id();
+            $table->string('icon');
+            $table->string('title');
+            $table->longText('desc');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('services');
     }
 };

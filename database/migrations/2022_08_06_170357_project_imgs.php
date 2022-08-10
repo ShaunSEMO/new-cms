@@ -13,7 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('project_imgs', function (Blueprint $table) {
+            $table->id();
+            $table->integer('project_id');
+            $table->string('image');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('project_imgs');
     }
 };

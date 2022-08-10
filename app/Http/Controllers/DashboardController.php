@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Abouts;
-use App\User;
-use App\Value;
-use App\Stats;
-use App\Project;
-use App\Project_img;
-use App\Testimonial;
-use App\TeamMember;
-use App\Contact;
-use App\Social_link;
-use App\Post;
-use App\Picture;
-use App\GalleryEvent;
+use App\Models\Abouts;
+use App\Models\User;
+use App\Models\Value;
+use App\Models\Stats;
+use App\Models\Project;
+use App\Models\Project_img;
+use App\Models\Testimonial;
+use App\Models\TeamMember;
+use App\Models\Contact;
+use App\Models\Social_link;
+use App\Models\Post;
+use App\Models\Picture;
+use App\Models\GalleryEvent;
 use DB;
 
 use Illuminate\Http\Request;

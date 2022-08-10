@@ -1,14 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Picture extends Model
 {
-    public function event(){
-
-        return $this->belongsTo('App\Models\GalleryEvent');
-        
-    }
+    use HasFactory;
 }

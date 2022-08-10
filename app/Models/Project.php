@@ -1,14 +1,17 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
+    use HasFactory;
+
     protected $gaurded = [];
     
     public function images() {
-        return $this->hasMany('App\Models\Project_img');
+        return $this->hasMany('App\Project_img');
     }
 }

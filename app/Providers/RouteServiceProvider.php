@@ -17,6 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
+    protected $namespace = 'App\Http\Controllers';
     public const HOME = '/home';
     public const DASHBOARD = '/$d_bu$!n3$$_d@$h';
 
